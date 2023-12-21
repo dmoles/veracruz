@@ -48,8 +48,10 @@ const tlHeight = computed(() => {
 </template>
 
 <style lang="scss">
+@use '../_colors';
+
 div.vc-timeline {
-  background: #d4be90;
+  background: colors.$parchment;
   border-right: 1px solid black;
   border-bottom: 3px solid black;
   padding: 1rem;
