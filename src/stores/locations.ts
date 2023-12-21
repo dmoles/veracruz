@@ -1,7 +1,7 @@
 import {defineStore} from "pinia";
 import type { Ref } from 'vue'
 import {ref} from 'vue'
-import type { Location } from '../types/location'
+import type { Location } from '../types/Location'
 
 export const useLocationStore = defineStore('location', () => {
 
