@@ -4,6 +4,6 @@ import About from "./components/About.vue"
 </script>
 
 <template>
-  <Veracruz/>
   <About/>
+  <Veracruz/>
 </template>
