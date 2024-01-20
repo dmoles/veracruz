@@ -120,11 +120,23 @@ div.vc-document {
       display: none;
     }
 
-    // TODO: share styles w/label hover
+    &:not(:checked) ~ label.vc-document-icon {
+      &:hover {
+        img {
+          filter: invert(0.65) sepia(100%);
+          transition: filter 0.15s;
+        }
+
+        background: black;
+        box-shadow: 0 0 3px 1px black;
+        transition: background 0.25s, box-shadow 0.25s;
+      }
+    }
+
     &:checked ~ label.vc-document-icon {
       img {
         filter: invert(1);
-        transition: filter 0.25s;
+        transition: filter 0.15s;
       }
 
       background: black;
@@ -148,18 +160,6 @@ div.vc-document {
     display: block;
     width: min-content;
     height: min-content;
-
-    // TODO: share styles w/checked checkbox
-    &:hover {
-      img {
-        filter: invert(1);
-        transition: filter 0.25s;
-      }
-
-      background: black;
-      box-shadow: 0 0 3px 1px black;
-      transition: background 0.25s, box-shadow 0.25s;
-    }
   }
 
   div.vc-document-details {
